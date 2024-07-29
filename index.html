@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>薬の服用チェック</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+    .history {
+      margin-top: 20px;
+    }
+    .history-item {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      .button {
+        font-size: 14px;
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>薬の服用チェック</h1>
+    <p id="status">薬を飲んでいません</p>
+    <button class="button" onclick="takeMedication()">薬を飲む</button>
+    <div class="history" id="history">
+      <h2>服用履歴</h2>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
